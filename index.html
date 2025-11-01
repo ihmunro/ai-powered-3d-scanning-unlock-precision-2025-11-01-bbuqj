@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI-Powered 3D Scanning: Unlock Precision - Revolutionize your 3D scanning workflow with intelligent data processing and automated error correction.">
+    <meta name="keywords" content="3D scanning, AI, precision, scanning technology, automation">
+    <meta name="author" content="AI-Powered 3D Scanning">
+    <title>AI-Powered 3D Scanning: Unlock Precision</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #1e40af 0%, #0369a1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .feature-card-hover {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .feature-card-hover:hover {
+            transform: translateY(-8px);
+        }
+        .btn-primary {
+            transition: all 300ms ease;
+        }
+        .btn-primary:hover {
+            transform: scale(1.05);
+        }
+        .overlay-gradient {
+            background: linear-gradient(135deg, rgba(30, 64, 175, 0.85) 0%, rgba(3, 105, 161, 0.85) 100%);
+        }
+        .faq-answer {
+            transition: all 300ms ease;
+        }
+        .faq-icon {
+            transition: transform 300ms ease;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-cube text-white text-lg"></i>
+                </div>
+                <span class="text-xl font-bold text-gray-900">3D Scan AI</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Features</a>
+                <a href="#benefits" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Testimonials</a>
+                <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">About</a>
+                <a href="https://example.com" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-700 transition-all duration-300 hover:shadow-lg">Get Started</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden text-gray-700 hover:text-blue-600 transition-colors duration-300 p-2">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden absolute top-full left-0 right-0 bg-white shadow-lg md:hidden">
+                <div class="flex flex-col space-y-4 px-4 py-6">
+                    <a href="#features" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Features</a>
+                    <a href="#benefits" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Benefits</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">About</a>
+                    <a href="https://example.com" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-700 transition-all duration-300 hover:shadow-lg inline-block">Get Started</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 md:py-32 lg:py-40 bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 right-20 w-72 h-72 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl"></div>
+            <div class="absolute bottom-20 left-20 w-72 h-72 bg-cyan-400 rounded-full mix-blend-multiply filter blur-3xl"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="inline-block mb-6 px-4 py-2 bg-blue-100 rounded-full">
+                    <span class="text-blue-700 font-semibold text-sm">Precision Meets Intelligence</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                    AI-Powered 3D Scanning: <span class="gradient-text">Unlock Precision</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
+                    Revolutionize your 3D scanning workflow with AI. Achieve unparalleled accuracy, speed, and efficiency with our next-generation scanning technology that transforms how you capture and process dimensional data.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://example.com" class="btn-primary bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 hover:shadow-lg transition-all duration-300 inline-flex items-center justify-center space-x-2">
+                        <span>Start Your Free Trial</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#features" class="btn-primary bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold border-2 border-blue-600 hover:bg-blue-50 hover:shadow-lg transition-all duration-300 inline-flex items-center justify-center space-x-2">
+                        <span>Learn More</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Powerful Features Built for Excellence</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Harness the power of artificial intelligence to elevate your 3D scanning capabilities and achieve results that exceed expectations</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card-hover bg-gradient-to-br from-slate-50 to-gray-100 p-8 rounded-xl border border-gray-200 hover:border-blue-400 transition-all duration-300">
+                    <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-brain text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Intelligent Data Processing</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Our advanced machine learning algorithms analyze and process scanning data with unprecedented intelligence, automatically identifying patterns and optimizing results in real-time. The system learns from every scan to continuously improve accuracy and efficiency.
+                    </p>
+                    <div class="flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-300 cursor-pointer">
+                        <span>Explore More</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card-hover bg-gradient-to-br from-slate-50 to-gray-100 p-8 rounded-xl border border-gray-200 hover:border-blue-400 transition-all duration-300">
+                    <div class="w-14 h-14 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-wrench text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Automated Error Correction</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Eliminate scanning artifacts and imperfections automatically. Our intelligent error detection system identifies and corrects inconsistencies, noise, and gaps in your 3D data without manual intervention, ensuring pristine results every single time.
+                    </p>
+                    <div class="flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-300 cursor-pointer">
+                        <span>Learn Details</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card-hover bg-gradient-to-br from-slate-50 to-gray-100 p-8 rounded-xl border border-gray-200 hover:border-blue-400 transition-all duration-300">
+                    <div class="w-14 h-14 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-tachometer-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Real-Time Optimization</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Monitor and optimize your scanning process as it happens. Real-time feedback and adaptive algorithms adjust parameters on the fly, maximizing precision while minimizing scan time. Get superior results in less time than ever before.
+                    </p>
+                    <div class="flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-300 cursor-pointer">
+                        <span>See It In Action</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-24 bg-gradient-to-br from-blue-50 via-white to-cyan-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Transform Your Workflow</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Experience the tangible advantages that AI-powered scanning brings to your business</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="flex gap-6 feature-card-hover">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-blue-600">
+                                <i class="fas fa-check-circle text-white text-xl"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Accelerated Processing Speed</h3>
+                            <p class="text-gray-700">Reduce scanning and processing time by up to 70% with intelligent automation. What once took hours now takes minutes, allowing your team to handle more projects and meet aggressive deadlines.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6 feature-card-hover">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-cyan-600">
+                                <i class="fas fa-check-circle text-white text-xl"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Enhanced Accuracy & Precision</h3>
+                            <p class="text-gray-700">Achieve sub-millimeter accuracy with AI-driven calibration and correction. Eliminate human error and inconsistencies for perfectly reproducible results that meet the strictest quality standards.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6 feature-card-hover">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-indigo-600">
+                                <i class="fas fa-check-circle text-white text-xl"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Reduced Operational Costs</h3>
+                            <p class="text-gray-700">Lower labor costs through automation, minimize material waste with precision scanning, and reduce equipment downtime with predictive maintenance. See ROI within the first quarter of deployment.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6 feature-card-hover">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-purple-600">
+                                <i class="fas fa-check-circle text-white text-xl"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Seamless Integration</h3>
+                            <p class="text-gray-700">Works effortlessly with your existing equipment and software. Our platform integrates with industry-standard tools and workflows, requiring minimal training and setup for immediate productivity gains.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-2xl opacity-10 blur-2xl"></div>
+                    <img src="https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=600&h=600&fit=crop" alt="AI 3D Scanning Technology" class="relative rounded-2xl shadow-2xl w-full h-auto">
+                    <div class="absolute bottom-6 left-6 bg-white rounded-lg shadow-lg p-4 max-w-xs">
+                        <p class="text-sm font-semibold text-gray-900 mb-1">Efficiency Boost</p>
+                        <p class="text-2xl font-bold text-blue-600">+70%</p>
+                        <p class="text-xs text-gray-600">Average improvement in processing speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Trusted by Industry Leaders</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">See what our customers are saying about their experience with AI-powered 3D scanning</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gradient-to-br from-slate-50 to-gray-100 p-8 rounded-xl border border-gray-200 hover:shadow-xl transition-all duration-300 feature-card-hover">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        "This platform transformed our manufacturing process completely. We cut our quality inspection time in half while improving accuracy. The automated error correction alone has saved us thousands in rework costs."
+                    </p>
+                    <div class="border-t border-gray-300 pt-4">
+                        <p class="font-semibold text-gray-900">Michael Chen</p>
+                        <p class="text-sm text-gray-600">Production Manager, TechManufacturing Inc.</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-gradient-to-br from-slate-50 to-gray-100 p-8 rounded-xl border border-gray-200 hover:shadow-xl transition-all duration-300 feature-card-hover">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        "The real-time optimization feature is a game-changer. We can now handle twice the volume with the same team size. Our clients are thrilled with the precision of our deliverables."
+                    </p>
+                    <div class="border-t border-gray-300 pt-4">
+                        <p class="font-semibold text-gray-900">Sarah Williams</p>
+                        <p class="text-sm text-gray-600">Engineering Director, Precision 3D Solutions</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-gradient-to-br from-slate-50 to-gray-100 p-8 rounded-xl border border-gray-200 hover:shadow-xl transition-all duration-300 feature-card-hover">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        "Implementation was seamless and our team was productive within days. The intelligent data processing capabilities have exceeded our expectations. Highly recommended for any serious manufacturing operation."
+                    </p>
+                    <div class="border-t border-gray-300 pt-4">
+                        <p class="font-semibold text-gray-900">David Rodriguez</p>
+                        <p class="text-sm text-gray-600">Operations Lead, AutoTech Industries</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="bg-gradient-to-br from-slate-50 to-gray-100 p-8 rounded-xl border border-gray-200 hover:shadow-xl transition-all duration-300 feature-card-hover">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        "The automated error correction has virtually eliminated quality issues on our end. Our clients see fewer defects and we've achieved a 99.2% accuracy rate. This is the future of scanning technology."
+                    </p>
+                    <div class="border-t border-gray-300 pt-4">
+                        <p class="font-semibold text-gray-900">Emily Thompson</p>
+                        <p class="text-sm text-gray-600">Quality Assurance Manager, Dimensional Dynamics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-gradient-to-br from-slate-50 to-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">About Our Mission</h2>
+            </div>
+
+            <div class="space-y-8">
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Founded in 2020 by a team of AI researchers and precision engineering experts, our company emerged from a simple yet powerful vision: to democratize advanced 3D scanning technology through artificial intelligence. Our founders recognized that while 3D scanning was becoming essential across industries, the process remained time-consuming, error-prone, and expensive. They assembled a diverse team of machine learning engineers, optical specialists, and manufacturing veterans to create a solution that would fundamentally change how the world captures and processes dimensional data. Today, we serve over 500 companies across manufacturing, aerospace, healthcare, and automotive sectors, processing millions of scans annually with unparalleled accuracy and speed.
+                </p>
+
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Our core mission is to empower organizations worldwide by making precision 3D scanning intelligent, accessible, and economical. We believe that by combining cutting-edge artificial intelligence with proven engineering principles, we can eliminate inefficiencies, reduce costs, and unlock new possibilities for innovation. We're committed to continuous improvement, customer success, and advancing the state of the art in scanning technology. Our values of transparency, reliability, and customer-first thinking guide every decision we make, ensuring that our platform not only meets but exceeds the expectations of the most demanding industries.
+                </p>
+            </div>
+
+            <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <p class="text-3xl md:text-4xl font-bold text-blue-600 mb-2">500+</p>
+                    <p class="text-gray-700 font-medium">Active Customers</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-3xl md:text-4xl font-bold text-blue-600 mb-2">50M+</p>
+                    <p class="text-gray-700 font-medium">Scans Processed</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-3xl md:text-4xl font-bold text-blue-600 mb-2">99.2%</p>
+                    <p class="text-gray-700 font-medium">Accuracy Rate</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-3xl md:text-4xl font-bold text-blue-600 mb-2">70%</p>
+                    <p class="text-gray-700 font-medium">Time Savings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-24 overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=600&fit=crop');">
+            <div class="overlay-gradient absolute inset-0"></div>
+        </div>
+
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">Ready to Transform Your 3D Scanning?</h2>
+            <p class="text-xl text-gray-100 mb-8 leading-relaxed">
+                Join hundreds of industry leaders who are already experiencing the power of AI-driven precision scanning. Get started with a free trial today and see the difference for yourself.
+            </p>
+            <a href="https://example.com" class="btn-primary inline-flex items-center gap-3 bg-white text-blue-600 px-10 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 hover:shadow-xl transition-all duration-300">
+                <span>Start Your Free Trial Now</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-cube text-white text-lg"></i>
+                        </div>
+                        <span class="text-xl font-bold text-white">3D Scan AI</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Revolutionizing 3D scanning with artificial intelligence for precision, speed, and efficiency.
+                    </p>
+                    <div class="flex gap-4 mt-6">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-facebook text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-linkedin text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-6">Product</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Documentation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">API Reference</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-6">Company</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Careers</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Press</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal & Contact -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-6">Legal & Support</h3>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Support Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Security</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="border-t border-gray-800 pt-12 mb-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-envelope text-white"></i>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm">Email</p>
+                            <a href="mailto:info@test.com" class="text-white font-semibold hover:text-blue-400 transition-colors duration-300">info@test.com</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-phone text-white"></i>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm">Phone</p>
+                            <p class="text-white font-semibold">+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-map-marker-alt text-white"></i>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm">Address</p>
+                            <p class="text-white font-semibold">San Francisco, CA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2025 AI-Powered 3D Scanning. All rights reserved.
+                </p>
+                <p class="text-gray-400 text-sm">
+                    Made with <i class="fas fa-heart text-red-500"></i> for precision and innovation
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
